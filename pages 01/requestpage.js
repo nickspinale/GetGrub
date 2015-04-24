@@ -1,5 +1,6 @@
 function request(name, animalNo, fee,company, item, dropoff){
         this.name = name;
+        this.animalNo = animalNo;
         this.fee = fee;
         this.company = company;
         this.item = item;
@@ -12,7 +13,7 @@ function addToPage(r, imgArray){
             '<div class="rprice">'+
             '<p align="right"><span class="bolder">Delivery Fee:</span><br><strong> $'+ r.fee +'</strong></p>'+
             '</div>'+
-            '<img align="left" id="squirrel" src="'+imgArray[6]+'"height=50%>'+
+            '<img align="left" id="animalImg" src="'+imgArray[r.animalNo]+'"height=50%>'+
             '<div class="rname">'+
             '<p align="left"><span class="bolder">'+r.name+ //'</span> -'+ r.score + '</p>' +
             '</div>' +
@@ -35,7 +36,7 @@ function requested(){
 var animals = ["animals/Animals/level1.png","animals/Animals/level2.png","animals/Animals/level3.png","animals/Animals/level4.png","animals/Animals/level5.png",
     "animals/Animals/level6.png","animals/Animals/level7.png","animals/Animals/level8.png"];
 
-var test = new request("Jack Wines", 1, 125, "Sayles-Hill, Carleton College", "Strawberry Nana Smoothie", "Myers Hall, Room 340");
+var test = new request("Jack Wines", 3, 125, "Sayles-Hill, Carleton College", "Strawberry Nana Smoothie", "Myers Hall, Room 340");
 var a1 = new request("John doe", 1, 6, "sayles", "chicken queso", "libe");
 var a2 = new request("johnny ", 1, 2, "subway", "pickles", "cassat");
 var a3 = new request("Aaaa", 1, 3, "Pizza Hut", "fat pizza", "musser");
