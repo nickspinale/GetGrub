@@ -1,16 +1,31 @@
 Parse.initialize("Jlsk3dPD05eCFHICf8IhS786NsrKR9kP4QNgJ1wL", "8XPomIMiytGITQmvBIZSxYgdslw5RIokTQuHzN1p");
 
-// function tst() {
-//     var acc = ""
-//     var psts = getPosts()
-//     for ( x in psts ) {
-//         acc = acc + " " + psts[x].item
-//     }
-//     alert(acc)
-// }
+function test() {
+    var rq = new request("biff", null, "hundo", "cvs", "both", "3my")
+    putPost(rq)
+}
 
 function putPost(request) {
-    
+
+    var Posts = Parse.Object.extend("Posts")
+    var post = new Posts()
+
+    console.log("hi")
+
+    post.set("username", request.name)
+    post.set("deliveryFee", request.fee)
+    post.set("pickup", request.company)
+    post.set("comments", request.item)
+    post.set("dropoff", request.dropoff)
+
+    post.save(null, {
+        success: function(post) {
+            console.log("DIDIT")
+        },
+        error: function(post, error) {
+            console.log("FUCK")
+        }
+    })
 }
 
 function getPosts() {
@@ -42,31 +57,31 @@ function getPosts() {
     return posts
 }
 
-function go() {
+function login(u, p) {
 
-    Parse.User.logIn("nick", "nick", {
+    Parse.User.logIn("u", "p", {
         success: function(user) {
-            alert("yup");
+            window.location = requestpage.html
         },
         error: function(user, error) {
-            alert("nope");
+            console.log("nope");
         }
     });
 }
 
-function og() {
+function signup(u, p, e) {
 
     var user = new Parse.User();
-    user.set("username", "chill");
-    user.set("password", "imchill");
-    user.set("email", "chill@abc.edu");
+    user.set("username", u);
+    user.set("password", p);
+    user.set("email", e);
 
     user.signUp(null, {
         success: function(user) {
-            alert("yay");
+            window.location = requestpage.html
         },
         error: function(user, error) {
-            alert("wat");
+            console.log("wat");
         }
     });
 }
