@@ -1,5 +1,47 @@
 Parse.initialize("Jlsk3dPD05eCFHICf8IhS786NsrKR9kP4QNgJ1wL", "8XPomIMiytGITQmvBIZSxYgdslw5RIokTQuHzN1p");
 
+// function tst() {
+//     var acc = ""
+//     var psts = getPosts()
+//     for ( x in psts ) {
+//         acc = acc + " " + psts[x].item
+//     }
+//     alert(acc)
+// }
+
+function putPost(request) {
+    
+}
+
+function getPosts() {
+
+    var posts = []
+
+    var query = new Parse.Query("Posts")
+
+    var rand = Math.floor((Math.random() * 8) + 1);
+
+    query.find({
+        success: function(results) {
+            for ( x in results ) {
+                posts.push( new request( results[x].attributes.username
+                                       , rand
+                                       , results[x].attributes.deliveryFee
+                                       , results[x].attributes.pickup
+                                       , results[x].attributes.comments
+                                       , results[x].attributes.dropoff
+                                       )
+                          )
+            }
+        },
+        error: function(error) {
+            console.log("error retriving");
+        }
+    });
+
+    return posts
+}
+
 function go() {
 
     Parse.User.logIn("nick", "nick", {
@@ -10,7 +52,6 @@ function go() {
             alert("nope");
         }
     });
-
 }
 
 function og() {
@@ -26,25 +67,6 @@ function og() {
         },
         error: function(user, error) {
             alert("wat");
-        }
-    });
-
-}
-
-function goo() {
-
-    var query = new Parse.Query("Posts")
-
-    query.find({
-        success: function(results) {
-            var users = "0"
-            for ( x in results ) {
-                users = users + ", " + results[x].attributes.comments
-            }
-            alert(users)    
-        },
-        error: function(error) {
-            alert("waat");
         }
     });
 }
