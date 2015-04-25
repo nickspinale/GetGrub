@@ -11,7 +11,7 @@ function addToPage(r, imgArray){
     //alert("yo");
     document.getElementById("list").innerHTML += '<li class="request" onclick=requested();>'+
             '<div class="rprice">'+
-            '<p align="right"><span class="bolder">Delivery Fee:</span><br><strong> $'+ r.fee +'</strong></p>'+
+            '<p align="right"><span class="bolder">Delivery Fee:</span><br><strong> '+ r.fee +'</strong></p>'+
             '</div>'+
             '<img align="left" id="animalImg" src="'+imgArray[r.animalNo]+'"height=50%>'+
             '<div class="rname">'+
@@ -33,15 +33,18 @@ function requested(){
     //if we want to do something when clicking a box, it goes here. 
 }
 
+
 var animals = ["animals/Animals/level1.png","animals/Animals/level2.png","animals/Animals/level3.png","animals/Animals/level4.png","animals/Animals/level5.png",
     "animals/Animals/level6.png","animals/Animals/level7.png","animals/Animals/level8.png"];
 
 var test = new request("Jack Wines", 3, 125, "Sayles-Hill, Carleton College", "Strawberry Nana Smoothie", "Myers Hall, Room 340");
-var a1 = new request("John doe", 1, 6, "sayles", "chicken queso", "libe");
-var a2 = new request("johnny ", 1, 2, "subway", "pickles", "cassat");
+var a1 = new request("John doe", 7, 6, "sayles", "chicken queso", "libe");
+var a2 = new request("johnny ", 5, 2, "subway", "pickles", "cassat");
 var a3 = new request("Aaaa", 1, 3, "Pizza Hut", "fat pizza", "musser");
 var array = [test, a1, a2, a3];
 
+var requestArray = getPosts();
+alert(requestArray.length);
 // function compare(a,b) {
 //     if (a.priority < b.priority)
 //         return 1;
@@ -51,6 +54,6 @@ var array = [test, a1, a2, a3];
 // }
 // array.sort(compare);
 
-for(i = 0; i < array.length; i++){
-    addToPage(array[i], animals);
+for(i = 0; i < requestArray.length; i++){
+    addToPage(requestArray[i], animals);
 }
