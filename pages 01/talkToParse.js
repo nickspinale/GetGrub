@@ -30,6 +30,7 @@ function putPost() {
             post.set("comments", comments)
             post.set("dropoff", doLocation)
             post.set("userNum", num)
+            post.set("time", (new Date()).toTimeString())
 
             post.save(null, {
                 success: function(post) {
@@ -43,15 +44,6 @@ function putPost() {
         })
 	}
 }
-
-// function request(name, animalNo, fee,company, item, dropoff){
-//         this.name = name;
-//         this.animalNo = animalNo;
-//         this.fee = fee;
-//         this.company = company;
-//         this.item = item;
-//         this.dropoff = dropoff;
-// }
 
 function getPosts() {
 
@@ -77,6 +69,8 @@ function getPosts() {
         }
     });
 
+    console.log(posts.length + "oo")
+    // console.log(posts[posts.length - 1].animalNo)
     return posts
 }
 
