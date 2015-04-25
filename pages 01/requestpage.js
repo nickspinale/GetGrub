@@ -8,7 +8,7 @@ function request(name, animalNo, fee,company, item, dropoff){
 }
 
 function addToPage(r, imgArray){
-    alert("yo");
+    // alert("yo");
     document.getElementById("list").innerHTML += '<li class="request" onclick=requested();>'+
             '<div class="rprice">'+
             '<p align="right"><span class="bolder">Delivery Fee:</span><br><strong> '+ r.fee +'</strong></p>'+
@@ -31,7 +31,7 @@ function addToPage(r, imgArray){
 }
 
 function requested(){
-    //if we want to do something when clicking a box, it goes here. 
+    //if we want to do something when clicking a box, it goes here.
 }
 
 
@@ -44,8 +44,34 @@ var a2 = new request("johnny ", 5, 2, "subway", "pickles", "cassat");
 var a3 = new request("Aaaa", 1, 3, "Pizza Hut", "fat pizza", "musser");
 var array = [test, a1, a2, a3];
 
-var requestArray = getPosts();
-alert(requestArray.length);
+function getPosts() {
+
+    var query = new Parse.Query("Posts")
+
+    return query.find({
+        success: function(results) {
+            console.log(results.length);
+            for ( x in results ) {
+                var curr = { name     : results[x].attributes.username
+                           , animalNo : results[x].attributes.userNum
+                           , fee      : results[x].attributes.deliveryFee
+                           , company  : results[x].attributes.pickup
+                           , item     : results[x].attributes.comments
+                           , dropoff  : results[x].attributes.dropoff
+                           }
+                addToPage(curr, animals);
+            }
+        },
+        error: function(error) {
+            console.log("error retriving");
+        }
+    });
+
+    // console.log(posts[posts.length - 1].animalNo)
+    // return posts
+}
+getPosts()
+// alert(requestArray.length);
 // function compare(a,b) {
 //     if (a.priority < b.priority)
 //         return 1;
@@ -55,6 +81,3 @@ alert(requestArray.length);
 // }
 // array.sort(compare);
 
-for(i = 0; i < requestArray.length; i++){
-    addToPage(requestArray[i], animals);
-}

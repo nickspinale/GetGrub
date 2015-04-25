@@ -45,34 +45,6 @@ function putPost() {
 	}
 }
 
-function getPosts() {
-
-    var posts = []
-
-    var query = new Parse.Query("Posts")
-
-    query.find({
-        success: function(results) {
-            console.log(results.length);
-            for ( x in results ) {
-                posts.push({ name     : results[x].attributes.username
-                           , animalNo : results[x].attributes.userNum
-                           , fee      : results[x].attributes.deliveryFee
-                           , company  : results[x].attributes.pickup
-                           , item     : results[x].attributes.comments
-                           , dropoff  : results[x].attributes.dropoff
-                           })
-            }
-        },
-        error: function(error) {
-            console.log("error retriving");
-        }
-    });
-
-    console.log(posts.length + "oo")
-    // console.log(posts[posts.length - 1].animalNo)
-    return posts
-}
 
 function login() {
 	var username = document.loginForm.userid.value;
