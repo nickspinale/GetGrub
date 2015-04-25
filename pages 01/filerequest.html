@@ -1,0 +1,182 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>GetGrub Requests</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    
+    body{
+        padding:0;
+        margin:0;
+    }
+    ul{
+        padding:0;
+        margin:0;
+    }
+    .container{
+        position:fixed;
+        width:100%;
+        height:100%;
+        background-color:#ECEEED;
+       
+    }
+
+    .header{
+        position:fixed;
+        width:100%;
+        height:100px;
+        background-color:#31B7D1;
+        top:0;
+        left:0;
+        border-bottom: 2px solid #DFE0DF;
+
+    }
+    #icon{
+        float:left;
+        height:80px;
+        padding-top:10px;
+        padding-left:10px;
+    }
+    #title{
+        float:left;
+        font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
+        font-size: 200%;
+        color:white;
+        padding-left:20px;
+        font-weight: 100;
+    }
+    
+    #list{
+        padding-top: 100px;
+    }
+    .request{
+        width:75%;
+        height:500px;
+        background-color: white;
+        list-style: none;
+        margin-top:20px;
+        margin-bottom: 20px;
+        border-radius:7px;
+        font-size: 200%;
+    }
+    
+    #profile{
+        float:right;
+        height:40px;
+        padding-top:30px;
+        padding-left:20px;
+    }
+    #messages{
+        float:right;
+        height:40px;
+        padding-top:30px;
+        padding-left:20px;
+    }
+    #plus{
+        float:right;
+        height:40px;
+        padding-top:30px;
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    .rname{
+        padding-left: 15px;
+        padding-top:5px;
+        margin:10px;
+        font-size: 100%;
+        font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
+        font-weight: 100;
+    }
+    .rcompany{
+        
+        margin:10px;
+        font-size: 100%;
+        font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
+        font-weight: 100;
+    }
+    .ritem{
+        margin:10px;
+        font-size: 100%;
+        font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
+        font-weight: 100;
+    }
+    .rdropoff{
+        margin:10px;
+        font-size: 100%;
+        font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
+        font-weight: 100;
+    }
+    .rprice{
+        
+        margin:10px;
+        font-size: 100%;
+        font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
+        font-weight: 100;
+    }
+    .bolder{
+        font-weight: 200;
+    }
+    .field{
+        width:300px;
+        height:50px;
+    }
+    .submit{
+        width:50px;
+    }
+    </style>    
+</head>
+
+    <div class="container">
+        <div class="header">
+            <img id="icon" alt="" src="1429925815_Food-Dome-512.png">
+            <p id="title">GetGrub Requests</p>
+            <div class="buttons">
+                <a href="filerequest.html"><img id="plus"src="plus.png"></a>
+                <img id="profile"src="profile.png">
+                <img id="messages"src="messages.png">
+            </div>
+        </div>
+        <center><ul id="list">
+            <li class="request">
+                <div class="rname">
+                <p align="left"><span class="bolder">Current Logged In Username</span> - Their Score</p>
+                </div>
+                <div class="rcompany">
+                <p align="center"><input class="field" type="text" placeholder="Dropoff Location" name="dropofflocation" id="dropofflocation"></p>
+                </div>
+                <div class="ritem">
+                <p align="center"></span><input class="field"type="text" placeholder="Pickup Location" name="pickuplocation" id="pickuplocation"></p>
+                </div>
+                <div class="rdropoff">
+                <p align="center"><input class="field"type="text" placeholder="Comments" name="comments" id="comments"></p>
+                </div>
+                <div class="rprice">
+                <p align="center"><input class="field"type="text" placeholder="Delivery Fee" name="deliveryfee" id="deliveryfee"></p>
+                </div>
+                <button id="submit" onclick="test()">
+                Submit
+                </button>
+                
+            </li>
+            
+                
+            </li>
+            
+
+        </ul></center>
+        
+    </div>
+    
+
+    
+<body>
+   
+
+</body>
+<script src = "filerequest.js"></script>
+</html>
