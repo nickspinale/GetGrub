@@ -3,7 +3,13 @@ function test() {
 	var username = document.loginForm.userid.value;
 	var password = document.loginForm.password.value;
 
-	//replace this with whatever we want to do.
-	alert(username + " " + password);
-
+    Parse.User.logIn(username, password, {
+        success: function(user) {
+            console.log('fuckyeah')
+            window.location = requestpage.html
+        },
+        error: function(user, error) {
+            console.log("nope");
+        }
+    });
 }
