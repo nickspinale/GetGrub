@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+    <title>GetGrub</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+
+    body{
+        padding:0;
+        margin:0;
+    }
+    .container{
+        position:fixed;
+        width:100%;
+        height:100%;
+        background-color:#31B7D1;
+    }
+    .box{
+        position:relative;
+
+        width:500px;
+        height:400px;
+        background-color:#87E3E8;
+        border-radius:25px;
+        border: 10px solid white;
+
+    }
+    #icon{
+        height:150px;
+        position:relative;
+    }
+    .title{
+        font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
+        font-size: 300%;
+        color:white;
+        font-weight: 100;
+    }
+    .login{
+        font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
+        font-size: 100%;
+        color:white;
+        font-weight: 100;
+    }
+    #password{
+        position:relative;
+        right:3px;
+    }
+
+    .othertext{
+        font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
+        font-size: 100%;
+        color:white;
+        /* THE PADDING BELOW HAS BEEN CHANGED*/
+        padding-top:30px;
+        font-weight: 100;
+    }
+    </style>
+</head>
+
+    <div class="container">
+        <center>
+            <img id="icon" alt="" src="1429925815_Food-Dome-512.png"></center>
+        <center>
+            <div class="box">
+                <div class="title">
+                    <p>GetGrub</p>
+                </div>
+                <div class="login">
+                    <form name="loginForm">
+                    Login:<br><br>
+                    <input type="text" placeholder="User ID" name="userid">
+                    <br><br>
+                    <input id="password" type="password" placeholder="Password" name="password">
+                    </form>
+                    <br>
+                    <button id="submit" onclick="login()">
+                        Login
+                    </button>
+                </div>
+                <div class="othertext">
+                    <a href="signup.html">Don't have an account?</a>
+                    <p>Forgot username/password?</p>
+                </div>
+        </div>
+        </center>
+
+    </div>
+
+
+
+<body>
+
+
+</body>
+<script src="parse-1.4.2.js"></script></html>
+<script src="talkToParse.js"></script></html>
