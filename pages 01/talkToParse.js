@@ -30,7 +30,7 @@ function putPost() {
             post.set("comments", comments)
             post.set("dropoff", doLocation)
             post.set("userNum", num)
-            post.set("time", (new Date()).toTimeString())
+            post.set("time", (new Date()).toDateString())
 
             post.save(null, {
                 success: function(post) {

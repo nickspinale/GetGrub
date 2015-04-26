@@ -1,0 +1,174 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>GetGrub Requests</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    
+    body{
+        padding:0;
+        margin:0;
+    }
+    ul{
+        padding:0;
+        margin:0;
+    }
+    .container{
+        
+        width:100%;
+        height:100%;
+        background-color:#ECEEED;
+       
+    }
+
+    .header{
+        position:fixed;
+        width:100%;
+        height:100px;
+        background-color:#31B7D1;
+        top:0;
+        left:0;
+        border-bottom: 2px solid #DFE0DF;
+        z-index: 1;
+    }
+    #icon{
+        float:left;
+        height:80px;
+        padding-top:10px;
+        padding-left:10px;
+    }
+    #title{
+        float:left;
+        font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
+        font-size: 200%;
+        color:white;
+        padding-left:20px;
+        font-weight: 100;
+    }
+    
+  
+    
+    #profile{
+        float:right;
+        height:40px;
+        padding-top:30px;
+        padding-left:20px;
+    }
+    #messages{
+        float:right;
+        height:40px;
+        padding-top:30px;
+        padding-left:20px;
+    }
+    #plus{
+        float:right;
+        height:40px;
+        padding-top:30px;
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    .sidebar{
+        position:fixed;
+        float: left;
+        width:20%;
+        height:100%;
+        background-color: white;
+        border-right:1px solid black;
+        overflow-y:scroll;
+        
+    }
+    .contact{
+        border-bottom:1px solid black;
+        width:100%;
+        height:100px;
+    }
+    .contactslist{
+        padding-top: 100px;
+    }
+    .contactname{
+        padding:5px;
+        font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
+    }
+    .messaging{
+        
+        float:right;
+        padding-top: 100px;
+        width:80%;
+        height:600px;
+        background-color: #ECEEED;
+    }
+    .lmessage{
+        float:left;
+        border-radius: 7px;
+        width:100px;
+        background-color: #31B7D1;
+        padding: 5px;
+
+    }
+    .rmessage{
+        float:right;
+        border-radius: 7px;
+        width:100px;
+        background-color:#BCF5A9;
+        padding: 5px;
+
+    }
+    #text{
+        float:bottom;
+        width:100%;
+        margin-top: 100px;
+    }
+    </style>    
+</head>
+
+    <div class="container">
+        <div class="header">
+            <img id="icon" alt="" src="1429925815_Food-Dome-512.png">
+            <p id="title">GetGrub Requests</p>
+            <div class="buttons">
+                <a href="filerequest.html"><img id="plus"src="plus.png"></a>
+                <img id="profile"src="profile.png">
+                <a href="messages.html"><img id="messages"src="messages.png"></a>
+            </div>
+            <button onclick="sampleConvo()">Test Conversation</button>
+        </div>
+        <div class="messaging" >
+            <div id="correspondences">
+                <p class="lmessage" align="left">Helloooooooo</p><br><br>
+                <p class="rmessage"align="left">Helloooooooo</p><br><br>
+                <p class="lmessage"align="left">gimme chicken pls</p><br><br>
+                <p class="rmessage"align="left">k where do i go</p><br><br>
+                <p class="lmessage"align="left">idk</p><br><br>
+                <p class="rmessage"align="left">k</p><br><br>
+                <p class="lmessage"align="left">byebye</p><br><br>
+                <p class="rmessage"align="left">Helloooooooo</p><br><br>
+            </div>
+            <input id="text" type="text" placeholder="Write here..." name="text">
+            <button id="submit" onclick="sendMessage()">Send</button>    
+        </div>
+
+        <div class="sidebar">
+            <ul class="contactslist" id="convos">
+                
+                
+            </ul>
+        </div>
+        
+        
+    </div>
+    
+
+    
+<body>
+   
+
+</body>
+<script src = "parse-1.4.2.js"></script>
+<script src = "talkToParse.js"></script>
+<script src = "messages.js"></script>
+</html>

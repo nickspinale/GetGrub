@@ -63,7 +63,7 @@ function getPosts() {
             }
         },
         error: function(error) {
-            console.log("error retriving");
+            console.log("error retrieving");
         }
     });
 
