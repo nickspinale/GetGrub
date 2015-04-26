@@ -44,7 +44,7 @@ var a2 = new request("johnny ", 5, 2, "subway", "pickles", "cassat");
 var a3 = new request("Aaaa", 1, 3, "Pizza Hut", "fat pizza", "musser");
 var array = [test, a1, a2, a3];
 
-var requestArray = array;
+var requestArray = getPosts();
 alert(requestArray.length);
 // function compare(a,b) {
 //     if (a.priority < b.priority)
