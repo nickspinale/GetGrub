@@ -1,7 +1,7 @@
 GetGrub
 =======
 
-Project from CarlHacks 2015.
+Project from CarlHacks 2015 (Carleton College, Northfield, Minnesota)
 
 GetGrub is a mobile and web application which aims at providing busy college students with a simple means of acquiring food from various locations.
 The app allows users to post adds explaining their needs or cravings for food, respond to and discuss adds, and actually follow through with deliveries:
