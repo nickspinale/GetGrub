@@ -22,3 +22,9 @@ Static files for the web frontend are served by [Warp](htps://hackage.haskell.or
 The easiest way to build this server (for Linux or Mac) is with the [Nix Package Manager](nixos.org).
 Simply [install Nix](nixos.org/nixos/download.html), and run `nix-build` in the `web` directory.
 To deploy, run `./result/bin/serve [PORT] [BASE_DIR]`, where `BASE-DIR` is the absolute path of the `web/static` directory.
+
+### Contributors
+*   Holden Greenberg
+*   Kevin Kowalewski
+*   Micah Nacht
+*   Nick Spinale
