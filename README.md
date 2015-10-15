@@ -11,7 +11,7 @@ The app allows users to post adds explaining their needs or cravings for food, r
 This project's backend is powered by [Parse](http://parse.com), which made bridging the gap between mobile and web platforms very easy.
 The mobile app portion of the project was entirely written in [Swift](http://developer.apple.com/swift/), and the web portion was written in the html, css, and javascript, making some use of [backbone.js](backbonejs.org).
 
-This was a great experience for us, because none of us new javascript beforehand.
+This was a great experience for us, because none of us knew javascript beforehand.
 Overall, we all learned a lot from this project and we are very proud of our work.
 We hope you enjoy it as much as we do!
 
