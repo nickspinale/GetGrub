@@ -24,7 +24,7 @@ Simply [install Nix](nixos.org/nixos/download.html), and run `nix-build` in the 
 To deploy, run `./result/bin/serve [PORT] [BASE_DIR]`, where `BASE-DIR` is the absolute path of the `web/static` directory.
 
 ### Contributors
-*   Holden Greenberg
-*   Kevin Kowalewski
-*   Micah Nacht
-*   Nick Spinale
+*   [Holden Greenberg](http://github.com/holdengreenberg)
+*   [Kevin Kowalewski](http://github.com/kevinkowalew)
+*   [Micah Nacht](http://github.com/nachtm)
+*   [Nick Spinale](http://github.com/nickspinale)
