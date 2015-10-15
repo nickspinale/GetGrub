@@ -4,7 +4,7 @@ GetGrub
 GetGrub is a mobile and web application which aims at providing busy college students with a simple means of acquiring food from various locations.
 The app allows users to post adds explaining their needs or cravings for food, respond to and discuss adds, and actually follow through with deliveries:
 
-![demo](common/demo.png)
+![demo](common/demo.jpg)
 
 This project's backend is powered by [Parse](http://parse.com), which made bridging the gap between mobile and web platforms very easy.
 The mobile app portion of the project was entirely written in [Swift](http://developer.apple.com/swift/), and the web portion was written in the html, css, and javascript, making some use of [backbone.js](backbonejs.org).
