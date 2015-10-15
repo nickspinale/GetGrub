@@ -14,6 +14,6 @@ The easiest way to build this server (for Linux or Mac) is with the [Nix Package
 Simply [install Nix](nixos.org/nixos/download.html), and run `nix-build` in the `web` directory.
 To deploy, run `./result/bin/serve [PORT] [BASE_DIR]`, where `BASE-DIR` is the absolute path of the `web/static` directory.
 
-This was a great experience for us, because none of us new javascript beforehand.
+This was a great experience for us, because none of us knew javascript beforehand.
 Overall, we all learned a lot from this project and we are very proud of our work.
 We hope you enjoy it as much as we do. 

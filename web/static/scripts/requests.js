@@ -9,11 +9,12 @@ function request(name, animalNo, fee,company, item, dropoff){
 
 function addToPage(r, imgArray){
     // alert("yo");
+    console.log(r);
     document.getElementById("list").innerHTML += '<li class="request" onclick=requested();>'+
             '<div class="rprice">'+
             '<p align="right"><span class="bolder">Delivery Fee:</span><br><strong> '+ r.fee +'</strong></p>'+
             '</div>'+
-            '<img align="left" id="animalImg" src="'+imgArray[r.animalNo]+'"height=50%>'+
+            '<img align="left" id="animalImg" src="'+imgArray[r.animalNo - 1]+'"height=50%>'+
             '<div class="rname">'+
             '<p align="left"><span class="bolder">'+r.name+ //'</span> -'+ r.score + '</p>' +
             '</div>' +
@@ -35,8 +36,15 @@ function requested(){
 }
 
 
-var animals = ["animals/Animals/level1.png","animals/Animals/level2.png","animals/Animals/level3.png","animals/Animals/level4.png","animals/Animals/level5.png",
-    "animals/Animals/level6.png","animals/Animals/level7.png","animals/Animals/level8.png"];
+var animals = [ "/images/animals/level1.png"
+              , "/images/animals/level2.png"
+              , "/images/animals/level3.png"
+              , "/images/animals/level4.png"
+              , "/images/animals/level5.png"
+              , "/images/animals/level6.png"
+              , "/images/animals/level7.png"
+              , "/images/animals/level8.png"
+              ];
 
 var test = new request("Jack Wines", 3, 125, "Sayles-Hill, Carleton College", "Strawberry Nana Smoothie", "Myers Hall, Room 340");
 var a1 = new request("John doe", 7, 6, "sayles", "chicken queso", "libe");

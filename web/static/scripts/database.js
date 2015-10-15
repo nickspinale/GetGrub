@@ -34,7 +34,7 @@ function putPost() {
 
             post.save(null, {
                 success: function(post) {
-                    window.location = "requestpage.html"
+                    window.location = "/request.html"
                     console.log("DIDIT")
                 },
                 error: function(post, error) {
@@ -53,7 +53,7 @@ function login() {
     Parse.User.logIn(username, password, {
         success: function(user) {
             console.log('fuckyeah')
-            window.location = "requestpage.html"
+            window.location = "/request.html"
         },
         error: function(user, error) {
             console.log(error.message);
@@ -85,7 +85,7 @@ function signup() {
 
         user.signUp(null, {
             success: function(user) {
-                window.location = "requestpage.html"
+                window.location = "/request.html"
             },
             error: function(user, error) {
                 console.log(error.message);

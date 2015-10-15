@@ -18,7 +18,7 @@
         margin:0;
     }
     .container{
-        position:fixed;
+        
         width:100%;
         height:100%;
         background-color:#ECEEED;
@@ -55,7 +55,7 @@
     }
     .request{
         width:75%;
-        height:500px;
+        height:250px;
         background-color: white;
         list-style: none;
         margin-top:20px;
@@ -83,91 +83,63 @@
         padding-left:20px;
         padding-right:20px;
     }
-
+    #animalImg{
+        padding:10px;
+    }
     .rname{
         padding-left: 15px;
         padding-top:5px;
         margin:10px;
-        font-size: 100%;
+        font-size: 60%;
         font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
         font-weight: 100;
     }
     .rcompany{
-        
+        padding-left: 15px;
         margin:10px;
-        font-size: 100%;
+        font-size: 60%;
         font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
         font-weight: 100;
     }
     .ritem{
+        padding-left: 15px;
         margin:10px;
-        font-size: 100%;
+        font-size: 60%;
         font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
         font-weight: 100;
     }
     .rdropoff{
+        padding-left: 15px;
         margin:10px;
-        font-size: 100%;
+        font-size: 60%;
         font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
         font-weight: 100;
     }
     .rprice{
-        
-        margin:10px;
-        font-size: 100%;
+        float:right;
+        padding-right: 15px;
+        margin:0;
+        font-size: 120%;
         font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
         font-weight: 100;
     }
     .bolder{
         font-weight: 200;
     }
-    .field{
-        width:300px;
-        height:50px;
-    }
-    .submit{
-        width:50px;
-    }
     </style>    
 </head>
 
     <div class="container">
         <div class="header">
-            <img id="icon" alt="" src="1429925815_Food-Dome-512.png">
+            <img id="icon" alt="" src="/images/circular_logo.png">
             <p id="title">GetGrub Requests</p>
             <div class="buttons">
-                <a href="filerequest.html"><img id="plus"src="plus.png"></a>
-                <img id="profile"src="profile.png">
-                <img id="messages"src="messages.png">
+                <a href="/requests.html"><img id="plus"src="/images/plus.png"></a>
+                <img id="profile"src="/images/profile.png">
+                <img id="messages"src="/images/messages.png">
             </div>
         </div>
         <center><ul id="list">
-            <li class="request">
-                <div class="rname">
-                <p align="left"><span class="bolder">Current Logged In Username</span> - Their Score</p>
-                </div>
-                <div class="rcompany">
-                <p align="center"><input class="field" type="text" placeholder="Dropoff Location" name="dropofflocation" id="dropofflocation"></p>
-                </div>
-                <div class="ritem">
-                <p align="center"></span><input class="field"type="text" placeholder="Pickup Location" name="pickuplocation" id="pickuplocation"></p>
-                </div>
-                <div class="rdropoff">
-                <p align="center"><input class="field"type="text" placeholder="Comments" name="comments" id="comments"></p>
-                </div>
-                <div class="rprice">
-                <p align="center"><input class="field"type="text" placeholder="Delivery Fee" name="deliveryfee" id="deliveryfee"></p>
-                </div>
-                <button id="submit" onclick="putPost()">
-                Submit
-                </button>
-                
-            </li>
-            
-                
-            </li>
-            
-
         </ul></center>
         
     </div>
@@ -178,6 +150,7 @@
    
 
 </body>
-<script src = "parse-1.4.2.js"></script>
-<script src = "talkToParse.js"></script>
+<script src = "/scripts/depends/parse-1.4.2.js"></script>
+<script src = "/scripts/database.js"></script>
+<script src = "/scripts/requests.js"></script>
 </html>
