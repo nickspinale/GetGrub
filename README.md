@@ -27,4 +27,4 @@ To deploy, run `./result/bin/serve [PORT] [BASE_DIR]`, where `BASE-DIR` is the a
 *   [Holden Greenberg](http://github.com/holdengreenberg)
 *   [Kevin Kowalewski](http://github.com/kevinkowalew)
 *   [Micah Nacht](http://github.com/nachtm)
-*   [Nick Spinale](http://github.com/nickspinale)
+*   [Nick Spinale](http://nickspinale.com)
